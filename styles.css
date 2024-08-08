@@ -1,0 +1,103 @@
+body {
+    background-color: #222831;
+    margin: 0;
+    padding: 0;
+}
+
+
+.playfair-display-<uniquifier> {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    }
+
+header {
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav {
+    background-color: #E3E1D9;
+    padding: 1rem;
+    text-align: center;
+    color: #000000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+aside {
+    color: white;
+    background-color: #31363F;
+    padding: 20px;
+    width: 20%;
+}
+
+.left {
+    margin-right: 10px;
+}
+.right {
+    margin-left: 10px;
+}
+.kontak a {
+    color: black;
+    text-decoration: none;
+}
+
+.kontak a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.kontak {
+    color: black;
+    margin-right: 10px;
+    background-color: #E3E1D9;
+}
+
+main {
+    background-color: #E3E1D9;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.form-transaksi {
+    background-color: #E3E1D9;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    bottom: 0;
+    position: flex;
+}
+
+header, footer {
+    background-image: url('img/gbr (1).png');
+    background-position: flex;
+}

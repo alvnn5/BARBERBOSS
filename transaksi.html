@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <center><h1>BARBER BOSS</h1></center>
+    </header>
+    <nav>
+        <marquee><h3>"STYLING ENERGI MAKE HANDSOME"</h3></marquee>
+    </nav>
+    <div class="container">
+        <aside class="left">
+            <center>
+                DESKRIPTION
+            </center>
+            <hr>
+            <ul>
+                <li>Gentlemen Grooming</li>
+                <P1>A complete mens grooming service. Dimulai dengan membersihkan wajah dengan handuk dingin kemudian potong rambut lalu keramas, selanjutnya membersihkan wajah dengan handuk hangat, mendapatkan pijat kepala, leher dan bahu lalu diakhiri dengan pengaplikasian tonic dan pomade untuk styling.
+                </P1>
+                <li>Grooming + Hair Tattoo</li>
+                <P1>Untuk kamu yang ingin mencari gaya rambut khas. Biarkan barberman kami yang terampil untuk membentuk dan merancang gaya rambut-mu seperti hasil mahakaryanya.
+                </P1>
+            </ul>
+        </aside>
+        <main class="form-transaksi">
+            <center><h2>Formulir Transaksi</h2></center>
+            <form id="transaksiForm">
+                <label for="nama">NAME:</label><br>
+                <input type="text" id="nama" name="nama"><br><br>
+                <label for="date">BOOKING TIME:</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+                <label for="phone">PHONE NUMBER :</label><br>
+                <input type="text" id="phone" name="phone"></input><br><br>
+                <label for="produk">HAIRDRESER:</label><br>
+                <div>
+                    <input type="radio" id="jhon" name="hairmann" value="JHON" data-price="500000">
+                    <label for="jhon">JHON</label>
+                </div>
+                <div>
+                    <input type="radio" id="michael" name="hairmann" value="MICHAEL" data-price="800000">
+                    <label for="michael">MICHAEL</label>
+                </div>
+                <br>
+                <button type="button" onclick="buatPesanan()">Buat Pesanan</button>
+                <button type="reset">Reset</button>
+            </form>
+        </main>
+        <aside class="rights">
+            <center>
+                DESKRIPTION
+            </center>
+            <hr>
+            <ul>
+                <li>Gentlemen Grooming</li>
+                <P1>A complete mens grooming service. Dimulai dengan membersihkan wajah dengan handuk dingin kemudian potong rambut lalu keramas, selanjutnya membersihkan wajah dengan handuk hangat, mendapatkan pijat kepala, leher dan bahu lalu diakhiri dengan pengaplikasian tonic dan pomade untuk styling.
+                </P1>
+                <li>Grooming + Hair Tattoo</li>
+                <P1>Untuk kamu yang ingin mencari gaya rambut khas. Biarkan barberman kami yang terampil untuk membentuk dan merancang gaya rambut-mu seperti hasil mahakaryanya.
+                </P1>
+            </ul>
+        </aside>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="transaksi.html">BOOKING</a></li>
+            <li><a href="invoice.html">INVOICE</a></li>
+            <li><a href="kontak.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <script src="script.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedHairmann = urlParams.get('hairmann');
+
+        if (selectedHairmann) {
+            document.getElementById(selectedHairmann).checked = true;
+        }
+    </script>
+    <footer>
+        <center>@copyright BY alvnn_5</center>
+    </footer>
+</body>
+</html>
